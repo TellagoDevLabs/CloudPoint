@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PolicyResource
+  xmlns="urn:schemas-microsoft-com:office:server:policy"
+  id = "SPSM.MediaExpirationAction"
+  featureId="Microsoft.Office.RecordsManagement.PolicyFeatures.Expiration"
+  type = "Action">
+  <Name>SPSM Media Assets Expiration Action</Name>
+  <Description>Deletes the asset from the assets list, and also the temporary and definite location, and it also deletes its thumbnail.</Description>
+  <AssemblyName>{0}</AssemblyName>
+  <ClassName>SPSM.Common.Media.RMPolicies.MediaExpirationAction</ClassName>
+</PolicyResource>

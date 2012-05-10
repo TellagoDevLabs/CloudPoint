@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9695b8a5-c40a-41e6-bce1-e90938a81135" solutionId="9695b8a5-c40a-41e6-bce1-e90938a81135" resetWebServer="false" name="SPStorageManager" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="SPSM.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\Common.csproj" />
+    <customAssembly location="AWSSDK.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\Program Files (x86)\AWS SDK for .NET\bin\AWSSDK.dll" />
+    <customAssembly location="Microsoft.Practices.ServiceLocation.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\TycoTRS\FaceTime\Branches\Refactor\Lib\Microsoft.Practices\Microsoft.Practices.ServiceLocation.dll" />
+    <customAssembly location="Microsoft.Practices.SharePoint.Common.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\TycoTRS\FaceTime\Branches\Refactor\Lib\Microsoft.Practices\Microsoft.Practices.SharePoint.Common.dll" />
+    <customAssembly location="Microsoft.WindowsAPICodePack.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\TycoTRS\FaceTime\Branches\Refactor\Lib\WindowsAPICodePack\Microsoft.WindowsAPICodePack.dll" />
+    <customAssembly location="Microsoft.WindowsAPICodePack.Shell.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\TycoTRS\FaceTime\Branches\Refactor\Lib\WindowsAPICodePack\Microsoft.WindowsAPICodePack.Shell.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="eb75c76c-320b-473d-b0d5-244060a469be" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="53997011-0d2f-4ecc-8c67-8faba7858f81" />
+  </projectItems>
+</package>

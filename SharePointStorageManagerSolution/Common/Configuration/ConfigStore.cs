@@ -49,7 +49,7 @@ namespace SPSM.Common.Configuration
         public static readonly string CategoryField = "ConfigCategory";
         public static readonly string KeyField = "Title";
         public static readonly string ValueField = "ConfigValue";
-        public static string CacheDependencyFilePath = (string)m_Reader.GetValue(m_CacheFilePathKey, typeof(string));
+     //   public static string CacheDependencyFilePath = (string)m_Reader.GetValue(m_CacheFilePathKey, typeof(string));
 
         public enum ConfigStoreType
         {
@@ -741,7 +741,7 @@ namespace SPSM.Common.Configuration
         {
             logger.LogToOperations(SPSMCategories.ConfigStore, EventSeverity.Verbose, "ConfigStore-GetValue(): Adding item to memory cache with key '{0}' " +
                         "and value '{1}'.", CacheKey, Value);
-            CacheDependency fileDep = new CacheDependency(CacheDependencyFilePath);
+            CacheDependency fileDep = null;// new CacheDependency(CacheDependencyFilePath);
             HttpRuntime.Cache.Insert(CacheKey, Value, fileDep, DateTime.Now.AddMinutes(2), Cache.NoSlidingExpiration);
         }
     }

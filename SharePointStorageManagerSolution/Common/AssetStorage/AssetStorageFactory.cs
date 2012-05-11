@@ -82,7 +82,7 @@ namespace SPSM.Common.AssetStorage
             {
                 return ConfigStore.GetValue(configCategory, configKey);
             }
-            catch (TypeInitializationException ex)
+            catch 
             {
                 return configrepo.GetConfigValue(configCategory, configKey);
             }

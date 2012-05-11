@@ -1,0 +1,75 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:AssetStorage/f:AssetStorageFactory.cs" caret="5264" fromTop="20" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Features/d:Configuration/f:Configuration.Template.xml" caret="0" fromTop="0" />
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:Configuration/f:ConfigIdentifier.cs" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Elements.xml" caret="585" fromTop="12" />
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:Configuration/f:ConfigRepository.cs" caret="369" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Layouts/d:SPSM/f:Upload.aspx" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/d:ConfigStore/f:Elements.xml" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Elements.xml" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:ConfigItem/f:Elements.xml" caret="0" fromTop="0" />
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:Media/f:MediaConfig.cs" caret="5741" fromTop="14" />
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:Configuration/f:ConfigStore.cs" caret="19950" fromTop="9" />
+      <File id="5A654C2F-901B-499D-BDD7-2AF49FD1379D/d:Configuration/f:ConfigStoreListEventReceiver.cs" caret="3173" fromTop="6" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Layouts/d:SPSM/f:Upload.aspx.cs" caret="1466" fromTop="7" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="1008" fromTop="9" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Audio/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Image/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:mediaItem/f:Elements.xml" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="610" fromTop="6" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Video/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/d:MediaListInstance/f:Elements.xml" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="9217" fromTop="5" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="6398" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="4829" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="7388" fromTop="15" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="9211" fromTop="6" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="9507" fromTop="14" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="11580" fromTop="18" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="11563" fromTop="15" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="10224" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="10747" fromTop="9" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="3964" fromTop="13" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="3004" fromTop="11" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="2677" fromTop="20" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Audio/f:Elements.xml" caret="2378" fromTop="4" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="11228" fromTop="165" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Image/f:Elements.xml" caret="1142" fromTop="4" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="1008" fromTop="9" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Configuration/d:Lists/d:SPSM-ConfigStoreList/f:Schema.xml" caret="1977" fromTop="9" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Audio/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Audio/f:Elements.xml" caret="984" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Image/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Image/f:Elements.xml" caret="1142" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Video/f:Elements.xml" caret="2380" fromTop="9" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:mediaItem/f:Elements.xml" caret="0" fromTop="0" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="610" fromTop="6" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/f:Schema.xml" caret="1977" fromTop="6" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Video/f:Elements.xml" caret="309" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:ContentTypes/d:SPSM-Video/f:Elements.xml" caret="986" fromTop="3" />
+      <File id="8D033759-C070-4882-8D17-B8667D0B5959/d:Media/d:MediaList/d:MediaListInstance/f:Elements.xml" caret="0" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\lib</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

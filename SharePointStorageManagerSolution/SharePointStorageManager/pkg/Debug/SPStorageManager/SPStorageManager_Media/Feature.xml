@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Adds the Media List and Content types" Id="07e7d813-d7b0-449f-b83f-f8b4e1fba0da" Scope="Site" Title="Media List Feature">
+  <ElementManifests>
+    <ElementManifest Location="mediaItem\Elements.xml" />
+    <ElementManifest Location="MediaListInstance\Elements.xml" />
+    <ElementManifest Location="MediaList\Elements.xml" />
+    <ElementFile Location="MediaList\Schema.xml" />
+    <ElementManifest Location="SPSM-Audio\Elements.xml" />
+    <ElementManifest Location="SPSM-Image\Elements.xml" />
+    <ElementManifest Location="SPSM-Video\Elements.xml" />
+  </ElementManifests>
+</Feature>

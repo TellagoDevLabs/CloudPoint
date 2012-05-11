@@ -5,7 +5,12 @@
 <%@ Register Tagprefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Assembly Name="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="SPSM.Common.Media.Layouts.SPSM.Upload" %>
+<%@ Assembly Name="SPSM.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4450cc53ec08ea5d" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="SPSM.Common.Media.Layouts.SPSM.Upload" DynamicMasterPageFile="~masterurl/default.master" %>
+
+<%@ Register TagPrefix="wssuc" TagName="ButtonSection" Src="/_controltemplates/ButtonSection.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="InputFormSection" Src="/_controltemplates/InputFormSection.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="InputFormControl" Src="/_controltemplates/InputFormControl.ascx" %>
 
 <asp:Content ID="PageHead" ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
 
@@ -20,11 +25,11 @@
    </colgroup>
    <tr>
       <td>
-          <SharePoint:InputFormSection ID="InputFormSection1" runat="server"
+          <wssuc:InputFormSection ID="InputFormSection1" runat="server"
                Title="Upload Document"
                Description="Browse to the media asset you intend to upload." >
             <template_inputformcontrols>
-               <SharePoint:InputFormControl runat="server" LabelText="" >
+               <wssuc:InputFormControl runat="server" LabelText="" >
                   <Template_Control>                   
                      <div class="ms-authoringcontrols">
 						 Name:
@@ -53,18 +58,18 @@
                         </ul>                                                          				
                      </div>
                   </Template_Control>
-               </SharePoint:InputFormControl>
+               </wssuc:InputFormControl>
             </template_inputformcontrols>
-          </SharePoint:InputFormSection>
+          </wssuc:InputFormSection>
       </td>
    </tr>
    <tr>
       <td>
-          <SharePoint:InputFormSection ID="InputFormSection2" runat="server"
+          <wssuc:InputFormSection ID="InputFormSection2" runat="server"
                Title="Upload More Files"
                Description="You can optionally upload thumbnail and poster images related to the principal media asset. If you don't, these images will be generated for Images and Video files, and a default image will be used for Audio files." >
             <template_inputformcontrols>
-               <SharePoint:InputFormControl runat="server" LabelText="" >
+               <wssuc:InputFormControl runat="server" LabelText="" >
                   <Template_Control>                   
                      <div class="ms-authoringcontrols">
 						 Thumbnail Image:
@@ -80,24 +85,24 @@
                                                                                   				
                      </div>
                   </Template_Control>
-               </SharePoint:InputFormControl>
+               </wssuc:InputFormControl>
             </template_inputformcontrols>
-          </SharePoint:InputFormSection>
+          </wssuc:InputFormSection>
       </td>
    </tr>
    <tr><td>
-    <SharePoint:ButtonSection runat="server" ShowStandardCancelButton="true">
+    <wssuc:ButtonSection runat="server" ShowStandardCancelButton="true">
     <template_buttons>
        <asp:PlaceHolder ID="PlaceHolder1" runat="server">               
            <asp:Button id="btnOk" UseSubmitBehavior="false" runat="server" class="ms-ButtonHeightWidth" 
                        Text="OK" OnClick="btnOk_Click" OnClientClick="this.disabled = true; this.value = 'Uploading. Please wait...';" />
        </asp:PlaceHolder>
     </template_buttons>
-</SharePoint:ButtonSection>
+</wssuc:ButtonSection>
     </td></tr>
 </table>
   
-                                
+                                  
 </asp:Content>
 
 <asp:Content ID="PageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">

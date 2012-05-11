@@ -19,7 +19,7 @@ namespace SPSM.Common.Media.Layouts.SPSM {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.InputFormSection InputFormSection1;
+        protected global::System.Web.UI.UserControl InputFormSection1;
         
         /// <summary>
         /// FileToUpload control.
@@ -55,7 +55,7 @@ namespace SPSM.Common.Media.Layouts.SPSM {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.InputFormSection InputFormSection2;
+        protected global::System.Web.UI.UserControl InputFormSection2;
         
         /// <summary>
         /// ThumbnailInput control.

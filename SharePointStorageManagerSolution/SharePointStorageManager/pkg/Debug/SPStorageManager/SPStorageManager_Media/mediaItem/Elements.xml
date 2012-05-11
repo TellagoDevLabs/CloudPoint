@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+  ID="{C7D5B029-0AC1-4BF1-8746-873057F9B07E}"
+  Name="SPSMMediaAuthor"
+  StaticName="SPSMMediaAuthor"
+  DisplayName="Author"
+  Type="Text"
+  Group="SPSM Media Columns"
+  Required="TRUE"/>
+  <Field
+    ID="{CF105962-8D1B-4773-B48D-EE5314A0C990}"
+    Name="SPSMMediaDescription"
+    StaticName="SPSMMediaDescription"
+    DisplayName="Description"
+    Type="Note"
+    Group="SPSM Media Columns"
+    Required="TRUE"/>
+  <Field
+   ID="{E4C56391-FADD-492A-8EEB-78ACF66856BB}"
+   Name="SPSMMediaThumbnail"
+   StaticName="SPSMMediaThumbnail"
+   DisplayName="Thumbnail"
+   Type="URL"
+   Group="SPSM Media Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{CA3E1C63-AB3E-423E-820F-D88615D09E77}"
+   Name="SPSMMediaDetailThumbnail"
+   StaticName="SPSMMediaDetailThumbnail"
+   DisplayName="Detail Thumbnail"
+   Type="URL"
+   Group="SPSM Media Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{0C8EA650-FA42-47E1-9942-7928F5C6321F}"
+   Name="SPSMMediaLocation"
+   StaticName="SPSMMediaLocation"
+   DisplayName="Location"
+   Type="URL"
+   Group="SPSM Media Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{482E5650-CFD1-4585-B05D-DE65B588921D}"
+   Name="SPSMMediaTempLocation"
+   StaticName="SPSMMediaTempLocation"
+   DisplayName="Temp Location"
+   Type="Text"
+   Group="SPSM Media Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+    ID="{C3AFB835-1AD3-4B31-974C-BFC4E7071A0D}"
+    Name="SPSMMediaOriginWeb"
+    StaticName="SPSMMediaOriginWeb"
+    DisplayName="Originating Website"
+    Type="URL"
+    Group="SPSM Media Columns"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE"/>
+  <Field
+    ID="{B46D3B0A-0C7B-4C3C-963E-E8C3F5155B96}"
+    Name="SPSMMediaFormat"
+    StaticName="SPSMMediaFormat"
+    DisplayName="Format"
+    Type="Text"
+    Group="SPSM Media Columns"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE"
+    />
+  <Field
+    ID="{5F0BC128-5D75-4DC5-AB70-312C6D425F9F}"
+    Name="SPSMMediaProcStatus"
+    StaticName="SPSMMediaProcStatus"
+    DisplayName="Processing Status"
+    Type="Choice"
+    Group="SPSM Media Columns" Sortable="TRUE" Filterable="TRUE"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE">
+    <Default>Pending</Default>
+    <CHOICES>
+      <CHOICE>Pending</CHOICE>
+      <CHOICE>Success</CHOICE>
+      <CHOICE>Error</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field
+    ID="{A597D2D9-64C4-4390-92FA-0818976E3AD7}"
+    Name="SPSMMediaExpirationDate"
+    StaticName="SPSMMediaExpirationDate"
+    DisplayName="Expiration Date"
+    Type="DateTime"
+    Format="DateOnly"
+    Group="SPSM Media Columns"
+    >
+    <DefaultFormula>=[Today]+30</DefaultFormula>
+  </Field>
+  <Field
+    ID="{6206FB02-5323-4388-BFCC-914544C8D6ED}"
+    Name="SPSMMediaNrOfViews"
+    StaticName="SPSMMediaNrOfViews"
+    DisplayName="No. of Views"
+    Type="Number"
+    Group="SPSM Media Columns"
+    Required="FALSE"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE"
+  />
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004548a2ac1b8d437bbad0a9fe97383b19"
+               Name="SPSM-MediaItem"
+               Group="SPSM Content Types"
+               Description="SPSM Media Item Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Title" Sealed="TRUE" Required="True"/>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" DisplayName="Title" Sealed="TRUE" />
+      <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" DisplayName="Title" Sealed="TRUE" />
+      <FieldRef ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" Name="Created" ReadOnly="TRUE" DisplayName="Upload Date"/>
+      <FieldRef ID="{1df5e554-ec7e-46a6-901d-d85a3881cb18}" Name="Author" ReadOnly="TRUE" DisplayName="Uploader"/>      
+      <FieldRef ID="{C7D5B029-0AC1-4BF1-8746-873057F9B07E}" Name="SPSMMediaAuthor" DisplayName="Author"/>
+      <FieldRef ID="{CF105962-8D1B-4773-B48D-EE5314A0C990}" Name="SPSMMediaDescription" DisplayName="Description"/>
+      <FieldRef ID="{E4C56391-FADD-492A-8EEB-78ACF66856BB}" Name="SPSMMediaThumbnail" DisplayName="Thumbnail"/>
+      <FieldRef ID="{CA3E1C63-AB3E-423E-820F-D88615D09E77}" Name="SPSMMediaDetailThumbnail" DisplayName="Detail Thumbnail"/>
+      <FieldRef ID="{0C8EA650-FA42-47E1-9942-7928F5C6321F}" Name="SPSMMediaLocation" DisplayName="Location"/>
+      <FieldRef ID="{482E5650-CFD1-4585-B05D-DE65B588921D}" Name="SPSMMediaTempLocation" DisplayName="Temp Location"/>
+      <FieldRef ID="{C3AFB835-1AD3-4B31-974C-BFC4E7071A0D}" Name="SPSMMediaOriginWeb" DisplayName="Originating Website" />
+      <FieldRef ID="{B46D3B0A-0C7B-4C3C-963E-E8C3F5155B96}" Name="SPSMMediaFormat" DisplayName="Format" />
+      <FieldRef ID="{5F0BC128-5D75-4DC5-AB70-312C6D425F9F}" Name="SPSMMediaProcStatus" DisplayName="Processing Status"/>
+      <FieldRef ID="{A597D2D9-64C4-4390-92FA-0818976E3AD7}" Name="SPSMMediaExpirationDate" DisplayName="Expiration Date"/>
+      <FieldRef ID="{6206FB02-5323-4388-BFCC-914544C8D6ED}" Name="SPSMMediaNrOfViews"  DisplayName="No. of Views"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/SPSM/Upload.aspx</New>
+        </FormUrls>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

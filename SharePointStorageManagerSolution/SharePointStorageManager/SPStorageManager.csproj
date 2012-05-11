@@ -62,17 +62,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Configuration\ContentTypes\ConfigItem\SharePointProjectItem.spdata">
+    <None Include="ContentTypes\ConfigItem\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{41a43489-bb44-4132-be93-9484307071cb}</SharePointProjectItemId>
     </None>
-    <None Include="Configuration\Lists\ConfigStoreList\ConfigStore\SharePointProjectItem.spdata">
+    <None Include="Configuration\Lists\SPSM-ConfigStoreList\ConfigStore\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b21ae7be-86d1-4f9c-882d-1e6a8a3f2ef7}</SharePointProjectItemId>
     </None>
-    <None Include="Configuration\Lists\ConfigStoreList\SharePointProjectItem.spdata">
+    <None Include="Configuration\Lists\SPSM-ConfigStoreList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bbad9224-8dca-4f4a-a962-1ec6c5f152fc}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SPSM-Audio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d58a2ea-cbd3-4e1b-a866-87f70d83b526}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SPSM-Image\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{527d9e39-9736-4eb0-a941-270ac940dec2}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SPSM-Video\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6d015da-d440-4236-bea5-59060f1e34ce}</SharePointProjectItemId>
     </None>
     <None Include="Features\Configuration\Configuration.feature">
       <FeatureId>{eb75c76c-320b-473d-b0d5-244060a469be}</FeatureId>
+    </None>
+    <None Include="Features\Media\Media.feature">
+      <FeatureId>{4e4017cf-5e02-4aab-a6d5-f249801aadce}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
@@ -84,13 +96,13 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Sample\mediaItem\SharePointProjectItem.spdata">
+    <None Include="ContentTypes\mediaItem\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6a7b1fd5-3461-4ee5-b53a-cdd21a2d6a4c}</SharePointProjectItemId>
     </None>
-    <None Include="Sample\MediaList\MediaListInstance\SharePointProjectItem.spdata">
+    <None Include="Media\MediaList\MediaListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{52707a34-201d-458b-a066-584f39f3d04f}</SharePointProjectItemId>
     </None>
-    <None Include="Sample\MediaList\SharePointProjectItem.spdata">
+    <None Include="Media\MediaList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6d404cd4-ae10-47b6-b725-d256e659d164}</SharePointProjectItemId>
     </None>
   </ItemGroup>
@@ -101,20 +113,26 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Configuration\ContentTypes\ConfigItem\Elements.xml" />
-    <Content Include="Configuration\Lists\ConfigStoreList\Elements.xml" />
-    <Content Include="Configuration\Lists\ConfigStoreList\ConfigStore\Elements.xml" />
-    <Content Include="Configuration\Lists\ConfigStoreList\Schema.xml" />
+    <Content Include="ContentTypes\ConfigItem\Elements.xml" />
+    <Content Include="Configuration\Lists\SPSM-ConfigStoreList\Elements.xml" />
+    <Content Include="Configuration\Lists\SPSM-ConfigStoreList\ConfigStore\Elements.xml" />
+    <Content Include="Configuration\Lists\SPSM-ConfigStoreList\Schema.xml" />
+    <Content Include="ContentTypes\SPSM-Audio\Elements.xml" />
+    <Content Include="ContentTypes\SPSM-Image\Elements.xml" />
+    <Content Include="ContentTypes\SPSM-Video\Elements.xml" />
     <Content Include="Features\Configuration\Configuration.Template.xml">
       <DependentUpon>Configuration.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Media\Media.Template.xml">
+      <DependentUpon>Media.feature</DependentUpon>
     </Content>
     <Content Include="Layouts\SPSM\Upload.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Sample\mediaItem\Elements.xml" />
-    <Content Include="Sample\MediaList\Elements.xml" />
-    <Content Include="Sample\MediaList\MediaListInstance\Elements.xml" />
-    <Content Include="Sample\MediaList\Schema.xml" />
+    <Content Include="ContentTypes\mediaItem\Elements.xml" />
+    <Content Include="Media\MediaList\Elements.xml" />
+    <Content Include="Media\MediaList\MediaListInstance\Elements.xml" />
+    <Content Include="Media\MediaList\Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />

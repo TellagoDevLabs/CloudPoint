@@ -68,21 +68,21 @@ namespace SPSM.Common.Configuration
 
         private void flushCache()
         {
-            try
-            {
-                SPSecurity.RunWithElevatedPrivileges(delegate()
-                {
-                    File.WriteAllText(ConfigStore.CacheDependencyFilePath, DateTime.Now.ToString());
-                });
-                logger.LogToOperations(SPSMCategories.ConfigStore, EventSeverity.Verbose, "ConfigStoreListEventReceiver-flushCache(): Successfully flushed Config Store cache - wrote " +
-                    "to cache dependency file at '{0}'.", ConfigStore.CacheDependencyFilePath);
-            }
-            catch (Exception e)
-            {
-                // many IO exception types can occur here, so we catch general exception..
-                logger.LogToOperations(e,SPSMCategories.ConfigStore, EventSeverity.Warning, "ConfigStoreListEventReceiver-flushCache(): Failed to flush Config Store cache - unable " +
-                    "to write to cache dependency file at '{0}'. Config Store may return stale values!", ConfigStore.CacheDependencyFilePath);
-            }
+            //try
+            //{
+            //    SPSecurity.RunWithElevatedPrivileges(delegate()
+            //    {
+            //        File.WriteAllText(ConfigStore.CacheDependencyFilePath, DateTime.Now.ToString());
+            //    });
+            //    logger.LogToOperations(SPSMCategories.ConfigStore, EventSeverity.Verbose, "ConfigStoreListEventReceiver-flushCache(): Successfully flushed Config Store cache - wrote " +
+            //        "to cache dependency file at '{0}'.", ConfigStore.CacheDependencyFilePath);
+            //}
+            //catch (Exception e)
+            //{
+            //    // many IO exception types can occur here, so we catch general exception..
+            //    logger.LogToOperations(e,SPSMCategories.ConfigStore, EventSeverity.Warning, "ConfigStoreListEventReceiver-flushCache(): Failed to flush Config Store cache - unable " +
+            //        "to write to cache dependency file at '{0}'. Config Store may return stale values!", ConfigStore.CacheDependencyFilePath);
+            //}
         }
     }
 }

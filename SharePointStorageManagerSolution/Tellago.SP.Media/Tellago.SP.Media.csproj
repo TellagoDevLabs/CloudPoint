@@ -60,6 +60,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\WindowsAPICodePack\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WindowsAzure\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -75,6 +79,7 @@
   <ItemGroup>
     <Compile Include="AssetStorage\AmazonS3AssetStorageManager.cs" />
     <Compile Include="AssetStorage\AssetStorageFactory.cs" />
+    <Compile Include="AssetStorage\AzureStorageManager.cs" />
     <Compile Include="AssetStorage\FileSystemAssetStorageManager.cs" />
     <Compile Include="AssetStorage\FTPAssetStorageManager.cs" />
     <Compile Include="AssetStorage\IAssetStorageManager.cs" />

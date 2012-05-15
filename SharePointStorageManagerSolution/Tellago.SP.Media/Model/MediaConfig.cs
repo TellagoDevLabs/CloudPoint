@@ -38,6 +38,10 @@ namespace Tellago.SP.Media.Model
         AssetStorageAmazonKeyName,
         AssetStorageAmazonAccessKeyID,
         AssetStorageAmazonAccessSecretKeyID,
+        AssetStorageAzureAccountName,
+        AssetStorageAzureAccountKey,
+        AssetStorageAzureBlobEndpoint,
+        AssetStorageAzureContainer
     }
 
     public class MediaConfig

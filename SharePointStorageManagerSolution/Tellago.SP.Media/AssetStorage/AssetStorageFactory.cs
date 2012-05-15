@@ -43,8 +43,16 @@ namespace Tellago.SP.Media.AssetStorage
                 string amazonAccessKeyID = mediaConfig[MediaConfigKeys.AssetStorageAmazonAccessKeyID.ToString()];
                 string amazonAccessSecretKeyID = mediaConfig[MediaConfigKeys.AssetStorageAmazonAccessSecretKeyID.ToString()];
 
-                return new AmazonS3AssetStorageManager(amazonBucketName, amazonKeyName, amazonAccessKeyID,
-                                                       amazonAccessSecretKeyID);
+                return new AmazonS3AssetStorageManager(amazonBucketName, amazonKeyName, amazonAccessKeyID, amazonAccessSecretKeyID);
+            }
+            else if ("AzureBlob".Equals(storageMethod, StringComparison.InvariantCultureIgnoreCase))
+            {
+                string azureAccountName = mediaConfig[MediaConfigKeys.AssetStorageAzureAccountName.ToString()];
+                string azureAccountKey = mediaConfig[MediaConfigKeys.AssetStorageAzureAccountKey.ToString()];
+                string azureBlobEnpoint = mediaConfig[MediaConfigKeys.AssetStorageAzureBlobEndpoint.ToString()];
+                string azureContainer = mediaConfig[MediaConfigKeys.AssetStorageAzureContainer.ToString()];
+
+                return new AzureStorageManager(azureAccountName, azureAccountKey, azureBlobEnpoint, azureContainer);
             }
             throw new ArgumentException(String.Format("Incorrect configuration Value '{0}' in ConfigStore for category '{1}' and key '{2}'. Supported options are: '{3}'",
                storageMethod, configCategory, MediaConfigKeys.AssetStorageMethod.ToString(), "AmazonS3|FileSystem|FTP|SPLibrary"));

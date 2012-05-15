@@ -1,0 +1,9 @@
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Tellago.SP.Media.dll
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Tellago.SP.Media.pdb
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Tellago.SP.Media.dll.CodeAnalysisLog.xml
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Tellago.SP.Media.dll.lastcodeanalysissucceeded
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\obj\Debug\ResolveAssemblyReference.cache
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\obj\Debug\Tellago.SP.Media.dll
+C:\CloudPoint\SharePointStorageManagerSolution\Tellago.SP.Media\obj\Debug\Tellago.SP.Media.pdb

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d206297c-f100-4bf9-ab3a-06d438ad8442" solutionId="d206297c-f100-4bf9-ab3a-06d438ad8442" resetWebServer="false" name="Tellago.SP.Common" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5eecfdfa-7a9d-47ed-b38e-0961e4325708" />
+    <featureReference itemId="98399705-3e9a-4d26-8f24-4fccfb44b148" />
+  </features>
+</package>

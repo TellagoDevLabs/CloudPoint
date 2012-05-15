@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="aa5d409e-ffac-43c1-9eac-4fbc02010bf5" Scope="Web" Title="Tellago.SP.Common Configuration Web feature">
+  <ElementManifests>
+    <ElementManifest Location="ConfigStore\Elements.xml" />
+    <ElementManifest Location="SPSM-ConfigStoreList\Elements.xml" />
+    <ElementFile Location="SPSM-ConfigStoreList\Schema.xml" />
+    <ElementManifest Location="ConfigItem\Elements.xml" />
+  </ElementManifests>
+</Feature>

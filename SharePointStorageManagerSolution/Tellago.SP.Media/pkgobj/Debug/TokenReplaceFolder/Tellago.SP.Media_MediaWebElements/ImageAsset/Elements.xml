@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Tellago.SP.Media - MediaAsset (Tellago.SP.Media\MediaAsset) (0x010002b3d104c0f846049d0512af04e33a49) -->
+  <ContentType ID="0x010002b3d104c0f846049d0512af04e33a4900fcc9d90360524d07a8f6a6418dd45074"
+               Name="ImageAsset"
+               Group="Tellago Content Types"
+               Description="Image Asset Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{922551b8-c7e0-46a6-b7e3-3cf02917f68a}" Name="ImageSize" />
+      <FieldRef ID="{7e68a0f9-af76-404c-9613-6f82bc6dc28c}" Name="ImageWidth" />
+      <FieldRef ID="{1944c034-d61b-42af-aa84-647f2e74ca70}" Name="ImageHeight" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

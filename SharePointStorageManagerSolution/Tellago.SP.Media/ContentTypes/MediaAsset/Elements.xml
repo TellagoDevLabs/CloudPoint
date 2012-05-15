@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+    ID="{E48E2C35-B9F5-4598-B92E-8EE8B0CCE0BA}"
+    Name="MediaDescription"
+    StaticName="MediaDescription"
+    DisplayName="Description"
+    Type="Note"
+    Group="Tellago Columns"/>
+  <Field
+   ID="{17124F84-8BD7-4DC5-8411-EA832612EAD9}"
+   Name="MediaThumbnail"
+   StaticName="MediaThumbnail"
+   DisplayName="Thumbnail"
+   Type="URL"
+   Group="Tellago Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{38B9AC3A-B312-4103-976E-1E69083C7502}"
+   Name="MediaPoster"
+   StaticName="MediaPoster"
+   DisplayName="Poster"
+   Type="URL"
+   Group="Tellago Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{DF7E5058-FC7C-4999-ABDF-D88571A9614F}"
+   Name="MediaLocation"
+   StaticName="MediaLocation"
+   DisplayName="Location"
+   Type="URL"
+   Group="Tellago Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+   ID="{5FEBB2A5-975A-4202-9590-8A1821A860DF}"
+   Name="MediaTempLocation"
+   StaticName="MediaTempLocation"
+   DisplayName="Temp Location"
+   Type="Text"
+   Group="Tellago Columns"
+   ShowInNewForm="FALSE"
+   ShowInEditForm="FALSE"/>
+  <Field
+    ID="{DD1B5921-B7FF-463D-A6D2-954C7B09AC06}"
+    Name="MediaFormat"
+    StaticName="MediaFormat"
+    DisplayName="Format"
+    Type="Text"
+    Group="Tellago Columns"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE"
+    />
+  <Field
+    ID="{07597702-95E9-4E9B-A41C-9DEF98A71986}"
+    Name="MediaProcStatus"
+    StaticName="MediaProcStatus"
+    DisplayName="Processing Status"
+    Type="Choice"
+    Group="Tellago Columns" Sortable="TRUE" Filterable="TRUE"
+    ShowInNewForm="FALSE"
+    ShowInEditForm="FALSE">
+    <Default>Pending</Default>
+    <CHOICES>
+      <CHOICE>Pending</CHOICE>
+      <CHOICE>Success</CHOICE>
+      <CHOICE>Error</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field
+    ID="{979C8396-DB85-4FBF-9612-FDBF43F3BC14}"
+    Name="MediaExpirationDate"
+    StaticName="MediaExpirationDate"
+    DisplayName="Expiration Date"
+    Type="DateTime"
+    Format="DateOnly"
+    Group="Tellago Columns"
+    >
+    <DefaultFormula>=[Today]+30</DefaultFormula>
+  </Field>
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010002b3d104c0f846049d0512af04e33a49"
+               Name="MediaAsset"
+               Group="Tellago Content Types"
+               Description="Media Asset Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef 
+        ID="{E48E2C35-B9F5-4598-B92E-8EE8B0CCE0BA}"
+        Name="MediaDescription"
+        DisplayName="Description"/>
+      <FieldRef
+       ID="{17124F84-8BD7-4DC5-8411-EA832612EAD9}"
+       Name="MediaThumbnail"
+       DisplayName="Thumbnail"
+       />
+      <FieldRef
+       ID="{38B9AC3A-B312-4103-976E-1E69083C7502}"
+       Name="MediaPoster"
+       DisplayName="Poster"/>
+      <FieldRef
+       ID="{DF7E5058-FC7C-4999-ABDF-D88571A9614F}"
+       Name="MediaLocation"
+       DisplayName="Location"/>
+      <FieldRef
+       ID="{5FEBB2A5-975A-4202-9590-8A1821A860DF}"
+       Name="MediaTempLocation"
+       DisplayName="Temp Location"/>
+      <FieldRef
+        ID="{DD1B5921-B7FF-463D-A6D2-954C7B09AC06}"
+        Name="MediaFormat"
+        DisplayName="Format"/>
+      <FieldRef
+        ID="{07597702-95E9-4E9B-A41C-9DEF98A71986}"
+        Name="MediaProcStatus"
+        DisplayName="Processing Status"/>
+      <FieldRef
+        ID="{979C8396-DB85-4FBF-9612-FDBF43F3BC14}"
+        Name="MediaExpirationDate"
+        DisplayName="Expiration Date"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/Tellago.SP.Media/Upload.aspx</New>
+        </FormUrls>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

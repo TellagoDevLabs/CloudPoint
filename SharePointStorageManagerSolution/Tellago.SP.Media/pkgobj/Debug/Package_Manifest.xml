@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="5a90c55e-6400-4f4d-a152-2d2bc28e1a4e" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Tellago.SP.Media.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\Tellago.SP.Media\Upload.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Tellago.SP.Media_MediaWebElements\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SharePointStorageManager - SPSM-ConfigStoreList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SharePointStorageManager-SPSM-ConfigStoreList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010068850d71958648f79baccace3c6ba806" Name="SharePointStorageManager - ConfigItem" Group="SPSM-ContentTypes" Description="Represents an item in the config store." Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{33F5C8B4-A6BB-41a4-AB24-69F2152974C5}" Name="ConfigCategory" DisplayName="Config Category" Required="TRUE" />
+          <FieldRef ID="{BD413479-48AB-41f5-8040-918F32EBBCC5}" Name="ConfigValue" DisplayName="Config Value" Required="TRUE" />
+          <FieldRef ID="{84D42C64-D0BD-4c76-8ED3-0A9E0D261111}" Name="ConfigItemDescription" DisplayName="Config Item Description" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{33f5c8b4-a6bb-41a4-ab24-69f2152974c5}" Name="ConfigCategory" StaticName="ConfigCategory" DisplayName="Config category" Group="SPSM Config Store columns" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" Sealed="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" DisplaceOnUpgrade="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="TRUE" />
+      <Field ID="{bd413479-48ab-41f5-8040-918f32ebbcc5}" Name="ConfigValue" StaticName="ConfigValue" DisplayName="Config value" Group="SPSM Config Store columns" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" Sealed="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" RestrictedMode="TRUE" UnlimitedLengthInDocumentLibrary="FALSE" RichText="FALSE" DisplaceOnUpgrade="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="TRUE" />
+      <Field ID="{84d42c64-d0bd-4c76-8ed3-0a9e0d261111}" Name="Config item description" StaticName="ConfigItemDescription" DisplayName="Config item description" Group="SPSM Config Store columns" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" Sealed="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" RestrictedMode="TRUE" UnlimitedLengthInDocumentLibrary="FALSE" RichText="FALSE" DisplaceOnUpgrade="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="TRUE" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+          <FieldRef Name="ConfigCategory" DisplayName="Config Category" />
+          <FieldRef Name="ConfigValue" DisplayName="Config Value" />
+          <FieldRef Name="ConfigItemDescription" DisplayName="Config Item Description" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="ConfigCategory" DisplayName="Config Category" />
+          <FieldRef Name="ConfigValue" DisplayName="Config Value" />
+          <FieldRef Name="ConfigItemDescription" DisplayName="Config Item Description" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

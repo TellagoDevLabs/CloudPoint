@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d206297c-f100-4bf9-ab3a-06d438ad8442" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Tellago.SP.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Tellago.SP.Common_Logging\Feature.xml" />
+    <FeatureManifest Location="Tellago.SP.Common_Configuration\Feature.xml" />
+  </FeatureManifests>
+</Solution>

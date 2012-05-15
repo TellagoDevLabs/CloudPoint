@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="6962acdd-09fe-4f50-9bd1-08b3c22c9ee7" ReceiverAssembly="Tellago.SP.Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2080e9f8ccda290" ReceiverClass="Tellago.SP.Media.Features.MediaWebElements.MediaWebElementsEventReceiver" Scope="Web" Title="Tellago.SP.Media WebComponents">
+  <Properties>
+    <Property Key="CreateMediaAssetsLib" Value="True" />
+  </Properties>
+  <ElementManifests>
+    <ElementManifest Location="MediaAsset\Elements.xml" />
+    <ElementManifest Location="ImageAsset\Elements.xml" />
+    <ElementManifest Location="AudioAsset\Elements.xml" />
+    <ElementManifest Location="VideoAsset\Elements.xml" />
+    <ElementManifest Location="MediaAssets\Elements.xml" />
+    <ElementManifest Location="MediaAssetsList\Elements.xml" />
+    <ElementFile Location="MediaAssetsList\Schema.xml" />
+    <ElementManifest Location="Assets\Elements.xml" />
+    <ElementFile Location="Assets\audioDefaultPoster.png" />
+    <ElementFile Location="Assets\audioDefaultThumb.png" />
+  </ElementManifests>
+</Feature>

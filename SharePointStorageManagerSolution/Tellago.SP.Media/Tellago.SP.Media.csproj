@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C938107-3DEC-44AC-8FD0-C39B56D670B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tellago.SP.Media</RootNamespace>
+    <AssemblyName>Tellago.SP.Media</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK">
+      <HintPath>..\Lib\AmazonWebServices\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a650cc71315fdaa9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WindowsAPICodePack\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d1000ff9a04380e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WindowsAPICodePack\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetStorage\AmazonS3AssetStorageManager.cs" />
+    <Compile Include="AssetStorage\AssetStorageFactory.cs" />
+    <Compile Include="AssetStorage\FileSystemAssetStorageManager.cs" />
+    <Compile Include="AssetStorage\FTPAssetStorageManager.cs" />
+    <Compile Include="AssetStorage\IAssetStorageManager.cs" />
+    <Compile Include="AssetStorage\SPLibraryAssetStorageManager.cs" />
+    <Compile Include="Backend\MediaProcessingException.cs" />
+    <Compile Include="Backend\MediaProcessingTimerJob.cs" />
+    <Compile Include="Backend\MediaProcessor.cs" />
+    <Compile Include="Backend\MediaRepository.cs" />
+    <Compile Include="Backend\VideoProcessor.cs" />
+    <Compile Include="Features\MediaWebElements\MediaWebElements.EventReceiver.cs">
+      <DependentUpon>MediaWebElements.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FileUtils.cs" />
+    <Compile Include="ImageProcessor.cs" />
+    <Compile Include="Layouts\Tellago.SP.Media\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Tellago.SP.Media\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaLengthCalculator.cs" />
+    <Compile Include="Model\MediaAsset.cs" />
+    <Compile Include="Model\MediaConfig.cs" />
+    <Compile Include="Model\MediaRepository.cs" />
+    <Compile Include="Model\Validators\AudioValidator.cs" />
+    <Compile Include="Model\Validators\ImageValidator.cs" />
+    <Compile Include="Model\Validators\IMediaValidator.cs" />
+    <Compile Include="Model\Validators\MediaTooLargeException.cs" />
+    <Compile Include="Model\Validators\ValidatorFactory.cs" />
+    <Compile Include="Model\Validators\VideoValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{951a51ee-9021-4abe-8ebb-a4ac4211bb7a}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\AudioAsset\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2ee5dde0-3ac4-423c-aabc-e2e86dba7371}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ImageAsset\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b4fdfd44-3e1c-4d31-b705-3aa6eaacb23f}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\MediaAsset\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79047243-04a6-4d8b-a878-270503ad335f}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\VideoAsset\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00707dc1-763d-42a6-8ede-ad414d4631a5}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\MediaWebElements\MediaWebElements.feature">
+      <FeatureId>{a8b6de54-67f9-4a9b-af02-4bc222a675cd}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ad8bef4-4c81-40e5-a8b7-4bfb1880503c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MediaAssetsList\MediaAssets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28a4a9da-5258-42af-aec9-aaa9eeecc2af}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MediaAssetsList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60b7c6f8-d924-4aa9-9ac6-95c5f23cf9ec}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{5a90c55e-6400-4f4d-a152-2d2bc28e1a4e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\audioDefaultPoster.png" />
+    <Content Include="Assets\audioDefaultThumb.png" />
+    <Content Include="Assets\Elements.xml" />
+    <Content Include="ContentTypes\AudioAsset\Elements.xml" />
+    <Content Include="ContentTypes\ImageAsset\Elements.xml" />
+    <Content Include="ContentTypes\MediaAsset\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\VideoAsset\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\MediaWebElements\MediaWebElements.Template.xml">
+      <DependentUpon>MediaWebElements.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Tellago.SP.Media\Upload.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Lists\MediaAssetsList\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\MediaAssetsList\MediaAssets\Elements.xml" />
+    <Content Include="Lists\MediaAssetsList\Schema.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tellago.SP.Common\Tellago.SP.Common.csproj">
+      <Project>{1D885BEE-0879-4544-A84C-464150292F28}</Project>
+      <Name>Tellago.SP.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

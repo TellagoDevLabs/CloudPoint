@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Tellago.SP.Media - MediaAsset (Tellago.SP.Media\MediaAsset) (0x010002b3d104c0f846049d0512af04e33a49) -->
+  <ContentType ID="0x010002b3d104c0f846049d0512af04e33a4900815cc9a3f9f74d7199ffe8633be76eec"
+               Name="AudioAsset"
+               Group="Tellago Content Types"
+               Description="Audio Asset Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{DE38F937-8578-435e-8CD3-50BE3EA59253}" Name="MediaLengthInSeconds"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

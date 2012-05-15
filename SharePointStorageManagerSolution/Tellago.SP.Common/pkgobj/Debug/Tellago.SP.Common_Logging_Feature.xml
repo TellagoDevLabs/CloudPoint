@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Installs custom logging Areas and Categories" Id="fae1c17e-c131-47bf-93a4-3585118ae8a3" ReceiverAssembly="Tellago.SP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43d9d5e82a9aaf03" ReceiverClass="Tellago.SP.Logging.Features.Logging.LoggingEventReceiver" Scope="Farm" Title="Tellago.SP.Common Farm Feature"></Feature>

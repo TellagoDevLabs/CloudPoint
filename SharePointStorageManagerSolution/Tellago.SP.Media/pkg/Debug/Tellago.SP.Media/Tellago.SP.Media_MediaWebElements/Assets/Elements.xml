@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Assets" Path="Assets" Url="Style Library/Tellago.SP.Media/images" RootWebOnly="TRUE">
+    <File Path="audioDefaultThumb.png" Url="audioDefaultThumb.png" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE"/>
+    <File Path="audioDefaultPoster.png" Url="audioDefaultPoster.png" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE"/>
+  </Module>
+</Elements>

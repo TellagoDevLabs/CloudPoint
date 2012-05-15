@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Tellago.SP.Media - MediaAssetsList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Tellago.SP.Media-MediaAssetsList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      <!-- Tellago.SP.Media - AudioAsset -->
+      <ContentTypeRef ID="0x010002b3d104c0f846049d0512af04e33a4900815cc9a3f9f74d7199ffe8633be76eec"/>
+      <!-- Tellago.SP.Media - ImageAsset -->
+      <ContentTypeRef ID="0x010002b3d104c0f846049d0512af04e33a4900fcc9d90360524d07a8f6a6418dd45074"/>
+      <!-- Tellago.SP.Media - VideoAsset -->
+      <ContentTypeRef ID="0x010002b3d104c0f846049d0512af04e33a4900ab8191d3bfa44cb2ae6edc9ea7881a77"/>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{e48e2c35-b9f5-4598-b92e-8ee8b0cce0ba}" Name="MediaDescription" StaticName="MediaDescription" DisplayName="Description" Type="Note" Group="Tellago Columns" />
+      <Field ID="{17124f84-8bd7-4dc5-8411-ea832612ead9}" Name="MediaThumbnail" StaticName="MediaThumbnail" DisplayName="Thumbnail" Type="URL" Group="Tellago Columns" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+      <Field ID="{38b9ac3a-b312-4103-976e-1e69083c7502}" Name="MediaPoster" StaticName="MediaPoster" DisplayName="Poster" Type="URL" Group="Tellago Columns" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+      <Field ID="{df7e5058-fc7c-4999-abdf-d88571a9614f}" Name="MediaLocation" StaticName="MediaLocation" DisplayName="Location" Type="URL" Group="Tellago Columns" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+      <Field ID="{5febb2a5-975a-4202-9590-8a1821a860df}" Name="MediaTempLocation" StaticName="MediaTempLocation" DisplayName="Temp Location" Type="Text" Group="Tellago Columns" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+      <Field ID="{dd1b5921-b7ff-463d-a6d2-954c7b09ac06}" Name="MediaFormat" StaticName="MediaFormat" DisplayName="Format" Type="Text" Group="Tellago Columns" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+      <Field ID="{07597702-95e9-4e9b-a41c-9def98a71986}" Name="MediaProcStatus" StaticName="MediaProcStatus" DisplayName="Processing Status" Type="Choice" Group="Tellago Columns" Sortable="TRUE" Filterable="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE">
+    <Default>Pending</Default>
+    <CHOICES>
+      <CHOICE>Pending</CHOICE>
+      <CHOICE>Success</CHOICE>
+      <CHOICE>Error</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{979c8396-db85-4fbf-9612-fdbf43f3bc14}" Name="MediaExpirationDate" StaticName="MediaExpirationDate" DisplayName="Expiration Date" Type="DateTime" Format="DateOnly" Group="Tellago Columns">
+    <DefaultFormula>=[Today]+30</DefaultFormula>
+  </Field>
+      <Field ID="{DE38F937-8578-435e-8CD3-50BE3EA59253}" Name="MediaLengthInSeconds" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MediaLengthInSeconds" Group="_Hidden" Type="Integer" DisplayName="$Resources:cmscore,column_medialenghtinseconds_displayname;" ShowInNewForm="FALSE" ShowInEditForm="FALSE"/>
+      <Field ID="{7E68A0F9-AF76-404c-9613-6F82BC6DC28C}" ReadOnly="TRUE" Type="Integer" Group="$Resources:core,Document_Columns;" Name="ImageWidth" DisplayName="$Resources:core,Picture_Width;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageWidth" />
+      <Field ID="{1944C034-D61B-42af-AA84-647F2E74CA70}" ReadOnly="TRUE" Type="Integer" Group="$Resources:core,Document_Columns;" Name="ImageHeight" DisplayName="$Resources:core,Picture_Height;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageHeight" />
+      <Field ID="{922551B8-C7E0-46a6-B7E3-3CF02917F68A}" Type="Computed" Group="_Hidden" Name="ImageSize" DisplayName="$Resources:core,Picture_Size;" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" ShowInEditForm="FALSE" Filterable="FALSE" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageSize">
+        <FieldRefs>
+          <FieldRef ID="{7E68A0F9-AF76-404c-9613-6F82BC6DC28C}" Name="ImageWidth" />
+          <FieldRef ID="{1944C034-D61B-42af-AA84-647F2E74CA70}" Name="ImageHeight" />
+          <FieldRef ID="{30BB605F-5BAE-48fe-B4E3-1F81D9772AF9}" Name="FSObjType" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>0</Expr2>
+            <Then>
+              <IfEqual>
+                <Expr1>
+                  <LookupColumn Name="ImageWidth" />
+                </Expr1>
+                <Expr2 />
+                <Then />
+                <Else>
+                  <IfEqual>
+                    <Expr1>
+                      <LookupColumn Name="ImageWidth" />
+                    </Expr1>
+                    <Expr2>0</Expr2>
+                    <Then />
+                    <Else>
+                      <HTML><![CDATA[<span dir=ltr>]]></HTML>
+                      <Column Name="ImageWidth" />
+                      <HTML>
+                        <![CDATA[
+                                    x
+                                    ]]>
+                      </HTML>
+                      <Column Name="ImageHeight" />
+                      <HTML><![CDATA[</span>]]></HTML>
+                    </Else>
+                  </IfEqual>
+                </Else>
+              </IfEqual>
+            </Then>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="ID"/>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="ContentType"/>
+          <FieldRef Name="MediaProcStatus"/>
+          <FieldRef Name="MediaTempLocation"/>
+          <FieldRef Name="MediaLocation"/>
+          <FieldRef Name="MediaThumbnail"/>
+          <FieldRef Name="MediaPoster"/>
+          <FieldRef Name="Created"/>
+          <FieldRef Name="Author"/>
+          <FieldRef Name="MediaFormat"/>
+          <FieldRef Name="MediaExpirationDate"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

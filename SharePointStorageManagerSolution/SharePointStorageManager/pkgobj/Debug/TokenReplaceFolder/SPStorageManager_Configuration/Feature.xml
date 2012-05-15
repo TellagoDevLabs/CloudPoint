@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Configuration Store Content Types and Lists" Hidden="TRUE" Id="c33d9dae-f754-4b9b-a657-83fe50f50f5a" Scope="Site" Title="SharePointStorageManager Configuration Feature">
-  <ElementManifests>
-    <ElementManifest Location="ConfigItem\Elements.xml" />
-    <ElementManifest Location="ConfigStore\Elements.xml" />
-    <ElementManifest Location="SPSM-ConfigStoreList\Elements.xml" />
-    <ElementFile Location="SPSM-ConfigStoreList\Schema.xml" />
-  </ElementManifests>
-</Feature>

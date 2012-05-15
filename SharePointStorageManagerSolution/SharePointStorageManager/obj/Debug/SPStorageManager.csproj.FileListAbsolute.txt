@@ -1,6 +1,0 @@
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\bin\Debug\SPSM.dll
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\bin\Debug\SPSM.pdb
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\bin\Debug\Microsoft.Office.Server.OpenXml.dll
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\obj\Debug\SPSM.dll
-C:\Users\Dwight Goins\Documents\CloudPoint\SharePointStorageManagerSolution\SharePointStorageManager\obj\Debug\SPSM.pdb

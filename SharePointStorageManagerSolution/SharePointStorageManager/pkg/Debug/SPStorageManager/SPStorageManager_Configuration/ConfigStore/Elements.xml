@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="SPSM-ConfigStore"
-                OnQuickLaunch="TRUE"
-                TemplateType="10060"
-                Url="Lists/SPSM-ConfigStore"
-                 Description="Stores configuration settings which can be changed by editing list items.">
-  </ListInstance>
-</Elements>

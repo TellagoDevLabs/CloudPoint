@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="SPSM-MediaListInstance"
-                OnQuickLaunch="TRUE"
-                TemplateType="10051"
-                Url="Lists/SPSM-MediaListInstance"
-                Description="My List Instance">
-  </ListInstance>
-</Elements>
